@@ -43,7 +43,7 @@ Cet outil de génération de code automatise le développement d’applications 
    - Configurez les options avancées (authentification, intégration de bases de données, etc.).
 4. Cliquez sur "Générer" pour obtenir un projet prêt à l’emploi.
 
-## Exemples
+# ILLUSTRATIVE EXAMPLES
 ### Page d’inscription
 - Créez un compte utilisateur pour accéder à l’outil.
 
