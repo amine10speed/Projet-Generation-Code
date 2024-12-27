@@ -21,7 +21,7 @@ Cet outil de génération de code automatise le développement d’applications 
 ## Installation
 1. Clonez ce dépôt :
    ```bash
-   git clone https://github.com/amine10speed/Projet-Generation-Code
+   git clone https://github.com/amine10speed/Projet-Generation-Code.git
    ```
 2. Installez les dépendances nécessaires :
    - Backend : Utilisez Maven pour gérer les dépendances.
