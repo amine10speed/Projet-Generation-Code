@@ -55,6 +55,9 @@ Cet outil de génération de code automatise le développement d’applications 
 ## Licence
 Ce projet est sous licence **MIT**. Veuillez consulter le fichier `LICENSE` pour plus d’informations.
 
+## Vidéo
+Voici une simpe démonstration sur notre application
+
 ## Support
 Pour toute question, veuillez contacter : 
 - Mohamed-Amine EL Haid : [mohamedamine8el@gmail.com](mailto:mohamedamine8el@gmail.com)
