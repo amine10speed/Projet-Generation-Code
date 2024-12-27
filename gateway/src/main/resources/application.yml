@@ -1,0 +1,4 @@
+spring:
+  cloud:
+    gateway:
+      forwarded-headers-strategy: framework  # Ensure Spring forwards custom headers

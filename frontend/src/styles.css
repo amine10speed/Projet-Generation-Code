@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #2a0066, #400096, #8123e6);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #root, .home-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  /* Add blur effect when modal is open */
+  .custom-dialog-container {
+    backdrop-filter: blur(5px); /* Blur background */
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency for modal */
+    border-radius: 12px; /* Rounded corners */
+  }

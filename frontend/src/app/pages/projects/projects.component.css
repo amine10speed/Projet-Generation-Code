@@ -1,0 +1,226 @@
+/* Container row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espacement entre les colonnes */
+  }
+  
+  /* Colonnes */
+  .col {
+    flex: 1 1 calc(50% - 16px); /* Prend 50% de largeur moins l'espacement */
+    box-sizing: border-box;
+  }
+  
+  /* Carte */
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .card-body {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    color: white; /* Texte des titres des cartes en blanc */
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    color: white; /* Texte des cartes en blanc */
+  }
+  
+  /* Bouton */
+  .btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .col {
+      flex: 1 1 100%;
+    }
+  }
+  
+  h1 {
+    text-align: center;
+    color: white; 
+    margin: 30px;
+    font-weight: bold;
+  }
+  
+
+  /* LA BARRE DE RECHERCHE */
+.search-bar {
+    color: white;
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px; 
+    
+    color: white;
+  }
+  
+  .search-bar mat-form-field {
+    width: 60%; 
+    border-radius: 4px; 
+  }
+  
+  .search-bar mat-label {
+    color: #007bff; 
+    font-size: 16px; 
+    color: white;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    font-size: 14px; 
+    border-radius: 4px; 
+    transition: border-color 0.3s ease; 
+  }
+  
+  .search-bar input:focus {
+    border-color: #007bff; 
+    outline: none; 
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .search-bar mat-form-field {
+      width: 90%;
+    }
+  }
+  
+  
+  /* Style pour la pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  .pagination .page-item {
+    margin: 0 5px;
+  }
+  
+  .pagination .page-link {
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .pagination .page-link:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination .page-item.active .page-link {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination .page-item.disabled .page-link {
+    background-color: #f1f1f1;
+    color: #ccc;
+  }
+  
+  li {
+    text-decoration: none;
+  }
+ 
+
+
+  /* Container */
+.container {
+    padding: 20px; /* Ajoutez un padding autour du conteneur pour plus d'espace */
+  }
+  
+  /* Reste du style, pas de changements nécessaires pour le conteneur */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .col-sm-6 {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 16px;
+  }
+  
+  button.mat-raised-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.mat-raised-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .col-sm-6 {
+      flex: 1 1 100%;
+    }
+  }
+
+  .no-projects-message {
+    font-size: 1.5rem; /* Bigger font size */
+    font-weight: bold;
+    color: white; /* White text */
+    text-align: center; /* Center text horizontally */
+    margin-top: 20px; /* Add some space from the top */ /* Optional: Add background for better visibility */
+    padding: 10px; /* Optional: Add padding for visual balance */
+    border-radius: 5px; /* Optional: Add rounded corners */
+  }
+  
+  

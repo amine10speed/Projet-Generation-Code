@@ -1,0 +1,51 @@
+.home-container {
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+/* Typing animation */
+.typing-animation {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hides overflow content */
+    display: inline-block;
+    border-right: 2px solid #ffffff; /* Simulates the blinking cursor */
+    animation: blink 0.5s step-end infinite; /* Cursor blinking animation */
+    width: fit-content; /* Automatically adjust to text width */
+    text-align: left; /* Ensure proper alignment */
+    line-height: 1;
+    height: 3rem; /* Set a fixed height matching the font size and line height */
+}
+
+/* Keyframes for blinking cursor */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Button styling */
+.try-now-btn {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #5e00c4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.try-now-btn:hover {
+    background-color: #8533ff;
+    box-shadow: 0 0 10px #8533ff;
+}
+
+.try-now-btn:focus {
+    outline: none;
+}

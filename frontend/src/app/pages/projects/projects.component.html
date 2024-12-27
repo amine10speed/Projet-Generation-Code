@@ -1,0 +1,58 @@
+<div class="container">
+  <h1>Your Projects</h1>
+
+  <!-- Search Bar or Create New Project Form -->
+  <div class="search-bar">
+    <mat-form-field appearance="fill" *ngIf="!isCreatingNewProject; else newProjectForm">
+      <mat-label>Search your projects...</mat-label>
+      <input matInput [(ngModel)]="searchTerm" placeholder="Search">
+    </mat-form-field>
+    <button mat-raised-button color="primary" *ngIf="!isCreatingNewProject" (click)="startCreatingNewProject()">New Project</button>
+
+    <ng-template #newProjectForm>
+      <mat-form-field appearance="fill">
+        <mat-label>Project Name</mat-label>
+        <input matInput [(ngModel)]="newProjectName" placeholder="Enter project name">
+      </mat-form-field>
+      <div style="display: flex; gap: 10px; margin-left: 10px; align-items: center;">
+        <button mat-raised-button color="primary" (click)="createNewProject()">Create</button>
+        <button mat-button color="warn" (click)="cancelCreatingNewProject()">Cancel</button>
+      </div>
+    </ng-template>
+  </div>
+
+  <!-- Existing Project List -->
+  <div *ngIf="projects.length > 0">
+    <div class="row">
+      <div class="col-sm-6" *ngFor="let project of filteredProjects()">
+        <div class="card mb-4" 
+             style="cursor: pointer;" 
+             (click)="navigateToProject(project.id, project.projectName)">
+          <div class="card-body" style="display: flex; justify-content: space-between; align-items: center;">
+            <h5 class="card-title">{{ project.projectName }}</h5>
+            <button mat-icon-button color="warn" (click)="deleteProject(project.id); $event.stopPropagation();">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <!-- No Projects Message -->
+  <div *ngIf="projects.length === 0" class="no-projects">
+    <p class="no-projects-message">It looks like you haven't created any projects yet.</p>
+  </div>
+
+<!-- Pagination -->
+<div class="pagination" style="display: flex; justify-content: center; margin-top: 20px;">
+  <mat-paginator [length]="filteredProjectsCount"
+                 [pageSize]="pageSize"
+                 [pageIndex]="pageIndex"
+                 (page)="pageChanged($event)"
+                 [hidePageSize]="true">
+  </mat-paginator>
+</div>
+

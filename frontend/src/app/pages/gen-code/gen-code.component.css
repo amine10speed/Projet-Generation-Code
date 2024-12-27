@@ -1,0 +1,29 @@
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li:hover {
+    background-color: #a61bc2;
+  }
+  
+  li {
+    color: rgb(166, 8, 150);
+  }
+  
+  .dropdown-menu {
+    background-color: #8f6b9e !important;
+    color: rgb(128, 19, 191) !important;
+  }
+  
+  .form-group label {
+    color: white;
+  }
+  
