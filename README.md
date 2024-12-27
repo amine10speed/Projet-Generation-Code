@@ -56,7 +56,7 @@ Cet outil de génération de code automatise le développement d’applications 
 Ce projet est sous licence **MIT**. Veuillez consulter le fichier `LICENSE` pour plus d’informations.
 
 ## Vidéo
-Voici une simpe démonstration sur notre application
+Voici une simple démonstration sur notre application
 
 ## Support
 Pour toute question, veuillez contacter : 
